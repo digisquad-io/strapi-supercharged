@@ -212,16 +212,16 @@ digisquad.io - contact@digisquad.io
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/digisquad-io/strapi-supercharged-template.svg?style=for-the-badge
-[contributors-url]: https://github.com/digisquad-io/strapi-supercharged-template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/digisquad-io/strapi-supercharged-template.svg?style=for-the-badge
-[forks-url]: https://github.com/digisquad-io/strapi-supercharged-template/network/members
-[stars-shield]: https://img.shields.io/github/stars/digisquad-io/strapi-supercharged-template.svg?style=for-the-badge
-[stars-url]: https://github.com/digisquad-io/strapi-supercharged-template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/digisquad-io/strapi-supercharged-template.svg?style=for-the-badge
-[issues-url]: https://github.com/digisquad-io/strapi-supercharged-template/issues
-[license-shield]: https://img.shields.io/github/license/digisquad-io/strapi-supercharged-template.svg?style=for-the-badge
-[license-url]: https://github.com/digisquad-io/strapi-supercharged-template/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/digisquad-io/strapi-supercharged.svg?style=for-the-badge
+[contributors-url]: https://github.com/digisquad-io/strapi-supercharged/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/digisquad-io/strapi-supercharged.svg?style=for-the-badge
+[forks-url]: https://github.com/digisquad-io/strapi-supercharged/network/members
+[stars-shield]: https://img.shields.io/github/stars/digisquad-io/strapi-supercharged.svg?style=for-the-badge
+[stars-url]: https://github.com/digisquad-io/strapi-supercharged/stargazers
+[issues-shield]: https://img.shields.io/github/issues/digisquad-io/strapi-supercharged.svg?style=for-the-badge
+[issues-url]: https://github.com/digisquad-io/strapi-supercharged/issues
+[license-shield]: https://img.shields.io/github/license/digisquad-io/strapi-supercharged.svg?style=for-the-badge
+[license-url]: https://github.com/digisquad-io/strapi-supercharged/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/company/digisquad-io
 [preview-api-content]: ./.github/images/preview-api-content.png
