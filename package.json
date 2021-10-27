@@ -1,0 +1,67 @@
+{
+  "name": "strapi-supercharged",
+  "version": "0.3.2",
+  "description": "",
+  "license": "MIT",
+  "author": {
+    "name": "digisquad.io",
+    "url": "https://digisquad.io",
+    "email": "contact@digisquad.io"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:digisquad-io/strapi-supercharged.git"
+  },
+  "types": "types",
+  "files": [
+    "types"
+  ],
+  "gitHooks": {
+    "pre-commit": "lint-staged",
+    "commit-msg": "commitlint -e -V"
+  },
+  "lint-staged": {
+    "*.d.ts": [
+      "eslint --fix",
+      "prettier --write"
+    ]
+  },
+  "scripts": {
+    "lint": "run-s lint:*",
+    "lint:eslint": "eslint . --fix",
+    "lint:prettier": "prettier --write .",
+    "test": "run-s test:*",
+    "test:tsc": "tsc -p .",
+    "test:eslint": "eslint .",
+    "test:prettier": "prettier --check .",
+    "commit": "commit",
+    "prepublishOnly": "run-s test standard-version",
+    "standard-version": "standard-version"
+  },
+  "dependencies": {
+    "@types/bookshelf": "^1.2.5",
+    "@types/events": "3.0.0",
+    "@types/koa": "2.13.4",
+    "@types/koa-bodyparser": "4.3.3",
+    "@types/koa-joi-router": "8.0.2",
+    "@types/node": "16.9.6",
+    "@types/pino": "6.3.11",
+    "@types/request": "2.48.7"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "13.1.0",
+    "@commitlint/config-conventional": "13.1.0",
+    "@commitlint/prompt-cli": "13.1.0",
+    "@typescript-eslint/eslint-plugin": "4.31.2",
+    "@typescript-eslint/parser": "4.31.2",
+    "commitlint": "13.1.0",
+    "eslint": "7.32.0",
+    "eslint-config-prettier": "8.3.0",
+    "lint-staged": "11.1.2",
+    "npm-run-all": "^4.1.5",
+    "prettier": "2.4.1",
+    "standard-version": "9.3.1",
+    "typescript": "4.4.3",
+    "yorkie": "2.0.0"
+  }
+}
