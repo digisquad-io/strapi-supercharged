@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.3.3 (2021-10-27)
+
+
+### Features
+
+* **ci:** add release script and npm publish action ([accec7f](https://github.com/digisquad-io/strapi-supercharged/commit/accec7f6e45d96a46bc96022c84a66769313b23b))
+* standalone strapi-supercharged package ([145bb1f](https://github.com/digisquad-io/strapi-supercharged/commit/145bb1f79ad1ff937ba02d9c732e4ba3abbdda81))
+
 ### [0.3.1](https://github.com/digisquad-io/strapi-supercharged/compare/v0.3.0...v0.3.1) (2021-10-27)
 
 ### Bug Fixes
