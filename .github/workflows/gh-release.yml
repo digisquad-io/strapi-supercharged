@@ -24,7 +24,7 @@ jobs:
         with:
           tag_name: ${{ steps.meta.outputs.tag }}
           name: Supercharged ${{ steps.meta.outputs.tag }}
-          body: View [CHANGELOG.md](https://github.com/digisquad-io/strapi-supercharged-template/blob/master/CHANGELOG.md) for details
+          body: View [CHANGELOG.md](https://github.com/digisquad-io/strapi-supercharged/blob/master/CHANGELOG.md) for details
           draft: false
           prerelease: false
           discussion_category_name: announcements
