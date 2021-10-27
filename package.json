@@ -8,6 +8,14 @@
     "url": "https://digisquad.io",
     "email": "contact@digisquad.io"
   },
+  "keywords": [
+    "strapi",
+    "cms",
+    "framework",
+    "types",
+    "typescript",
+    "supercharged"
+  ],
   "repository": {
     "type": "git",
     "url": "git@github.com:digisquad-io/strapi-supercharged.git"
@@ -35,8 +43,8 @@
     "test:eslint": "eslint .",
     "test:prettier": "prettier --check .",
     "commit": "commit",
-    "prepublishOnly": "run-s test standard-version",
-    "standard-version": "standard-version"
+    "release": "run-s test release:*",
+    "release:standard-version": "standard-version"
   },
   "dependencies": {
     "@types/bookshelf": "^1.2.5",
