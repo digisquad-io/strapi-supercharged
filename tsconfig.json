@@ -6,11 +6,12 @@
     "esModuleInterop": true,
     "resolveJsonModule": true,
     "strict": true,
+    "allowJs": true,
     "strictNullChecks": true,
     "noImplicitAny": true,
     "noEmit": true,
     "declaration": false,
     "outDir": "./never"
   },
-  "include": ["**/*.d.ts", ".eslintrc.js"]
+  "include": ["**/*.d.ts", ".eslintrc.js", "commitlint.config.js"]
 }
