@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.3.9](https://github.com/digisquad-io/strapi-supercharged/compare/v0.3.8...v0.3.9) (2021-10-27)
+
+
+### Bug Fixes
+
+* update dependencies ([5521834](https://github.com/digisquad-io/strapi-supercharged/commit/55218344ca51d64094d930290402e72b2a1e2c2e))
+
 ### 0.3.8 (2021-10-27)
 
 ### Features
