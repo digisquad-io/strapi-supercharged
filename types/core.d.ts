@@ -9,7 +9,7 @@ import type {
   Request,
 } from "koa";
 import type { BaseLogger } from "pino";
-import type { UserEntity } from "./entities";
+import type { UserEntity } from "./plugin-user-permissions";
 import type { ParsedUrlQuery } from "querystring";
 
 export type StrapiErrors = () => Record<string, (...args: any) => any>;
