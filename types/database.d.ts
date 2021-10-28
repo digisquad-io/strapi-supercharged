@@ -20,14 +20,6 @@ export interface StrapiDBManager<T> {
 
 // Strapi Core Store
 
-/* type StrapiCoreStoreEntity = Entity & {
-    key: string;
-    value: string;
-    type: string;
-    environment: string;
-    tag: string;
-  }; */
-
 export interface StrapiCoreStore {
   get<T>(params: any): Promise<T | null>;
   set(params: any): Promise<void>;

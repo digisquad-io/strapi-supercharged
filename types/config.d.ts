@@ -1,3 +1,9 @@
+import {
+  StrapiConfigHookSettings,
+  StrapiConfigMiddlewareSettings,
+  StrapiConfigPluginSettings,
+} from "./strapi";
+
 export interface StrapiConfigContext {
   env: (<T = string>(key: string, initial?: T) => T) & {
     int: (key: string, initial?: number) => number;

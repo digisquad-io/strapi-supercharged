@@ -2,17 +2,6 @@ import type { Model } from "bookshelf";
 import type { Entity } from "./entities";
 import type { StrapiAdmin } from "./admin";
 
-// import type {
-//   StrapiBaseApi,
-//   StrapiBaseComponents,
-//   StrapiBaseConfig,
-//   StrapiBaseControllers,
-//   StrapiBaseHook,
-//   StrapiBaseMiddleware,
-//   StrapiBaseModels,
-//   StrapiBasePlugins,
-//   StrapiBaseServices,
-// } from './base';
 import type { StrapiQuery } from "./query";
 import type {
   StrapiDBManager,
@@ -38,31 +27,228 @@ import type {
   StrapiTelemetry,
 } from "./core";
 
-export interface Strapi<
-  API extends StrapiApi = any,
-  COMPONENTS extends StrapiComponents = any,
-  CONFIG extends StrapiConfig = any,
-  CONTROLLERS extends StrapiControllers = any,
-  HOOK extends StrapiHook = any,
-  MIDDLEWARE extends StrapiMiddleware = any,
-  MODELS extends StrapiModels = any,
-  SERVICES extends StrapiServices = any,
-  PLUGINS extends StrapiPlugins = any
-> {
+import {
+  StrapiConfigAPI,
+  StrapiConfigBaseHookSettings,
+  StrapiConfigBaseMiddlewareSettings,
+  StrapiConfigDatabase,
+  StrapiConfigHooks,
+  StrapiConfigMiddlewares,
+  StrapiConfigServer,
+} from "./config";
+
+// Custom API: extends them in your app or plugins
+
+/**
+ * Extends the Strapi API `strapi.api` object with interface augmentation.
+ *
+ * Simply redeclare the interface with the new methods you want to add.
+ *
+ * @example
+ * ```ts
+ * // register strapi.api.myApi
+ * interface StrapiApi {
+ *   myApi: Record<string, any>;
+ * }
+ * ```
+ */
+export interface StrapiApi extends Record<string, any> {}
+
+/**
+ * Extends the Strapi Components `strapi.components` object with interface augmentation.
+ *
+ * Simply redeclare the interface with the new methods you want to add.
+ *
+ * @example
+ * ```ts
+ * // register strapi.components['meta.metadata']
+ * interface StrapiComponents {
+ *   'meta.metadata': any;
+ * }
+ * ```
+ */
+export interface StrapiComponents extends Record<string, any> {}
+
+/**
+ * Extends the Strapi Controllers `strapi.controller` object with interface augmentation.
+ *
+ * Simply redeclare the interface with the new methods you want to add.
+ *
+ * @example
+ * ```ts
+ * // register strapi.controller.myController
+ * interface StrapiControllers {
+ *   myController: (ctx: any) => any;
+ * }
+ * ```
+ */
+export interface StrapiControllers extends Record<string, any> {}
+
+/**
+ * Extends the Strapi Hooks `strapi.hook` object with interface augmentation.
+ *
+ * Simply redeclare the interface with the new methods you want to add.
+ *
+ * @example
+ * ```ts
+ * // register strapi.hook.myHook
+ * interface StrapiHook {
+ *   myHook: any;
+ * }
+ * ```
+ */
+export interface StrapiHook extends Record<string, any> {}
+
+/**
+ * Extends the Strapi Middleware `strapi.middleware` object with interface augmentation.
+ *
+ * Simply redeclare the interface with the new methods you want to add.
+ *
+ * @example
+ * ```ts
+ * // register strapi.myMiddleware.myMiddleware
+ * interface StrapiMiddleware {
+ *   myMiddleware: any;
+ * }
+ * ```
+ */
+export interface StrapiMiddleware extends Record<string, any> {}
+
+/**
+ * Extends the Strapi Models `strapi.models` object with interface augmentation.
+ *
+ * Simply redeclare the interface with the new methods you want to add.
+ *
+ * @example
+ * ```ts
+ * // register strapi.models.myModel
+ * interface StrapiModels {
+ *   myModel: any;
+ * }
+ * ```
+ */
+export interface StrapiModels extends Record<string, any> {}
+
+/**
+ * Extends the Strapi Services `strapi.services` object with interface augmentation.
+ *
+ * Simply redeclare the interface with the new methods you want to add.
+ *
+ * @example
+ * ```ts
+ * // register strapi.services.myService
+ * interface StrapiServices {
+ *   myService: any;
+ * }
+ * ```
+ */
+export interface StrapiServices extends Record<string, any> {}
+
+/**
+ * Extends the Strapi Plugins `strapi.plugins` object with interface augmentation.
+ *
+ * Simply redeclare the interface with the new methods you want to add.
+ *
+ * @example
+ * ```ts
+ * // register strapi.plugins.myPlugin
+ * interface StrapiPlugins {
+ *   myPlugin: any;
+ * }
+ * ```
+ */
+export interface StrapiPlugins extends Record<string, any> {}
+
+/**
+ * Extends the Strapi Hook configuration `strapi.config.hook.settings` object with interface augmentation.
+ * This will have also effect in `./config/hooks.js` file
+ *
+ * Simply redeclare the interface with the new methods you want to add.
+ *
+ * @example
+ * ```ts
+ * // register strapi.config.hook.settings.myHook
+ * interface StrapiConfigHookSettings {
+ *   myHook: {
+ *     enabled: boolean;
+ *     requiredSetting: string;
+ *     optionalSetting?: nuber;
+ *   };
+ * }
+ * ```
+ */
+export interface StrapiConfigHookSettings
+  extends StrapiConfigBaseHookSettings {}
+
+/**
+ * Extends the Strapi Middlewares configuration `strapi.config.middleware.settings` object with interface augmentation.
+ * This will have also effect in `./config/middlewares.js` file
+ *
+ * Simply redeclare the interface with the new methods you want to add.
+ *
+ * @example
+ * ```ts
+ * // register strapi.config.middlewares.settings.myMiddleware
+ * interface StrapiConfigMiddlewareSettings {
+ *   myMiddleware: {
+ *     enabled: boolean;
+ *     requiredSetting: string;
+ *     optionalSetting?: nuber;
+ *   };
+ * }
+ * ```
+ */
+export interface StrapiConfigMiddlewareSettings
+  extends StrapiConfigBaseMiddlewareSettings {}
+
+export interface StrapiConfigPluginSettings extends Record<string, any> {}
+
+export interface StrapiConfig extends Record<string, any> {
+  host: string;
+  port: number;
+  uuid: string;
+  environment: string;
+  appPath: string;
+  lauchedAt: number;
+  autoReload: boolean;
+  serveAdminPanel: boolean;
+  installedPlugins: string[];
+  installedMiddlewares: string[];
+  installedHooks: string[];
+  installedProviders: string[];
+  paths: Record<string, any>;
+  packageSonStrapi: Record<string, any>;
+  info: Record<string, any>;
+  routes: Record<string, any>[];
+  admin: Record<string, any>;
+  functions: Record<string, any>;
+  policies: Record<string, any>;
+  database: StrapiConfigDatabase;
+  api: StrapiConfigAPI;
+  server: StrapiConfigServer;
+  // plugins?: StrapiConfigPlugins;
+  hook: StrapiConfigHooks;
+  middlewares: StrapiConfigMiddlewares;
+  get<T>(key: string, orElse?: T): T;
+  has(key: string): boolean;
+  set(key: string, value?: any): void;
+}
+
+export interface Strapi {
   /**
    * This object contains APIs contained in the ./api folder.
    *
    * And by using `strapi.api[:name]` you can access the `controllers`, `services`,
    * the `model` definition and also the `configurations` of the `./api/:name` folder
    */
-  api: API;
-  components: COMPONENTS;
+  api: StrapiApi;
+  components: StrapiComponents;
   /**
    * Returns an object that represents the configurations of the project.
    *
    * Every JavaScript or JSON file located in the `./config` folder will be parsed into the strapi.config object
    */
-  config: CONFIG;
+  config: StrapiConfig;
   /**
    * Returns an object of the controllers which is available in the project.
    *
@@ -72,20 +258,20 @@ export interface Strapi<
    *
    * Note: This object doesn't include the admin's controllers and plugin's controllers.
    */
-  controllers: CONTROLLERS;
+  controllers: StrapiControllers;
   /**
    * Returns an object of the hooks available in the project.
    *
    * Every folder that follows this pattern strapi-* and located in the `./node_modules`
    * or `/hooks` folder will be mounted into the strapi.hook object.
    */
-  hook: HOOK;
+  hook: StrapiHook;
   /**
    * Returns an object of the middlewares available in the project.
    *
    * Every folder in the `./middlewares` folder will be also mounted into the `strapi.middleware` object.
    */
-  middleware: MIDDLEWARE;
+  middleware: StrapiMiddleware;
   /**
    * Returns an object of models available in the project.
    *
@@ -100,20 +286,20 @@ export interface Strapi<
    * strapi.models.users.find()
    * ```
    */
-  models: MODELS;
+  models: StrapiModels;
   /**
    * Returns an object of services available in the project.
    *
    * Every JavaScript file located in the `./api/**\/services` folders
    * will be parsed into the `strapi.services` object.
    */
-  services: SERVICES;
+  services: StrapiServices;
   /**
    * Returns an object of plugins available within the project.
    *
    * Each plugin object contains the associated `controllers`, `models`, `services` and `configurations`
    */
-  plugins: PLUGINS;
+  plugins: StrapiPlugins;
 
   /**
    * Returns the `Koa` instance
@@ -138,19 +324,7 @@ export interface Strapi<
   admin: StrapiAdmin;
   connections: StrapiConnections;
   contentTypes: StrapiContentTypes;
-  db: StrapiDBManager<
-    Strapi<
-      API,
-      COMPONENTS,
-      CONFIG,
-      CONTROLLERS,
-      HOOK,
-      MIDDLEWARE,
-      MODELS,
-      SERVICES,
-      PLUGINS
-    >
-  >;
+  db: StrapiDBManager<Strapi>;
   dir: Readonly<string>;
   entityValidator: StrapiEntityValidator;
   entityService: StrapiEntityService;
@@ -184,19 +358,7 @@ export interface Strapi<
    *
    * However, without restarting the server, the new configurations will not be taken in account.
    */
-  load: () => Promise<
-    Strapi<
-      API,
-      COMPONENTS,
-      CONFIG,
-      CONTROLLERS,
-      HOOK,
-      MIDDLEWARE,
-      MODELS,
-      SERVICES,
-      PLUGINS
-    >
-  >;
+  load: () => Promise<Strapi>;
   logFirstStartupMessage: () => void;
   listen: (callback?: (...args: any) => any) => void;
   logStats: () => void;
