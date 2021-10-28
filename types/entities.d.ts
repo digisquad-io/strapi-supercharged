@@ -1,5 +1,3 @@
-/* eslint-disable camelcase */
-
 export interface Entity {
   id: number;
 }
@@ -24,41 +22,3 @@ export type TimestampFields = {
 export type DraftAndPublishFields = {
   published_at: DateTimeField | null;
 };
-
-export type LocalizationFields = {
-  locale: string;
-  localizations: {
-    id: number | string;
-    locale: string;
-    publishaed_at: DateTimeField;
-  }[];
-};
-
-export type CreatorsFields = {
-  created_by: RelationWith<UserEntity>;
-  updated_by: RelationWith<UserEntity>;
-};
-
-// @todo: strapi-plugin-user-permissions
-export type UserEntity = CollectionEntity & Record<string, any>;
-export type RoleEntity = CollectionEntity & Record<string, any>;
-export type PermissionEntity = CollectionEntity & Record<string, any>;
-
-// @todo: strapi-plugin-upload
-export type FileEntity = Entity &
-  TimestampFields & {
-    name: string;
-    alternativeText: string;
-    caption: string;
-    width: number;
-    height: number;
-    formats: JSONField;
-    hash: string;
-    ext: string;
-    mime: string;
-    url: string;
-    previewUrl: string;
-    provider: string;
-    provider_metadata: JSONField;
-    related: RelationWith<any>[];
-  };
