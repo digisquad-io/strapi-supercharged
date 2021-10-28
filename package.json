@@ -1,7 +1,7 @@
 {
   "name": "strapi-supercharged",
   "version": "0.4.0",
-  "description": "",
+  "description": "Supercharge your Strapi application and plugins with typescript compiler",
   "license": "MIT",
   "author": {
     "name": "digisquad.io",
@@ -13,6 +13,8 @@
     "cms",
     "framework",
     "types",
+    "plugins",
+    "application",
     "typescript",
     "supercharged"
   ],

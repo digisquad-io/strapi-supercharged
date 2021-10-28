@@ -79,7 +79,7 @@ To get a local copy up and running follow these simple steps.
 
 ### Installation to an existing project
 
-1. Clone the repo
+1. Install `strapi-supercharged` and `typescript` dev dependencies
    ```sh
    npm install --save-dev strapi-supercharged typescript # yarn add -D strapi-supercharged typescript
    ```
@@ -100,17 +100,12 @@ To get a local copy up and running follow these simple steps.
        "baseUrl": ".",
        "noEmit": true,
        "declaration": false,
-       "types": [
-         "strapi-supercharged"
-       ]
+       "types": ["strapi-supercharged"]
      },
-     "include": [
-       "**/*.js",
-       ".eslintrc.js"
-     ],
+     "include": ["**/*.js", ".eslintrc.js"]
    }
    ```
-   
+
 ### Installation from template
 
 1. Clone the repo
