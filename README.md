@@ -81,7 +81,7 @@ To get a local copy up and running follow these simple steps.
 
 1. Clone the repo
    ```sh
-   npm install --save-dev strapi-supercharged # yarn add -D strapi-supercharged
+   npm install --save-dev strapi-supercharged typescript # yarn add -D strapi-supercharged typescript
    ```
 2. Create a `tsconfig.json`
    ```json
