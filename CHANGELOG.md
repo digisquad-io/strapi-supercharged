@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.4.0](https://github.com/digisquad-io/strapi-supercharged/compare/v0.3.9...v0.4.0) (2021-10-28)
+
+
+### ⚠ BREAKING CHANGES
+
+* remove global interface delcarations
+
+### Features
+
+* remove global interface delcarations ([e5a5100](https://github.com/digisquad-io/strapi-supercharged/commit/e5a51008cda7fbec329931dcb34e747e003841b8))
+
 ### [0.3.9](https://github.com/digisquad-io/strapi-supercharged/compare/v0.3.8...v0.3.9) (2021-10-27)
 
 
