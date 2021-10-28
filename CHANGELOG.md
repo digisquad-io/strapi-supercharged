@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.4.2](https://github.com/digisquad-io/strapi-supercharged/compare/v0.4.1...v0.4.2) (2021-10-28)
+
+
+### Features
+
+* **plugins:** export i18n, upload and user-permissions content-type interfaces ([9635341](https://github.com/digisquad-io/strapi-supercharged/commit/963534115f9e8592391c1f485aba95d33b34d0bd))
+
+
+### Bug Fixes
+
+* **plugins:** import user-entity path ([fa78b50](https://github.com/digisquad-io/strapi-supercharged/commit/fa78b50ac87fd860d0f7b2cc70333d3ff105a071))
+
 ### [0.4.1](https://github.com/digisquad-io/strapi-supercharged/compare/v0.4.0...v0.4.1) (2021-10-28)
 
 ## [0.4.0](https://github.com/digisquad-io/strapi-supercharged/compare/v0.3.9...v0.4.0) (2021-10-28)
