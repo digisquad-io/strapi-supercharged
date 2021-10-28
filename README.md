@@ -164,19 +164,19 @@ Use all power of Typescript directly into your Javascript
 
 > @todo
 
-_For complete examples, please refer to the [Article API model typing](https://github.com/digisquad-io/strapi-supercharged-template/api/article/models/article.d.ts) or the [Product model typing from sample plugin](https://github.com/digisquad-io/strapi-supercharged-template/plugins/sample/models/product.d.ts)_
+_For complete examples, please refer to the [Article API model typing](https://github.com/digisquad-io/strapi-supercharged-template/tree/main/api/article/models/article.d.ts) or the [Product model typing from sample plugin](https://github.com/digisquad-io/strapi-supercharged-template/tree/main/plugins/sample/models/product.d.ts)_
 
 ### 💡 Register API typing
 
 > @todo
 
-_For a complete example, please refer to the [ArticleAPI typing](https://github.com/digisquad-io/strapi-supercharged-template/api/article/index.d.ts)_
+_For a complete example, please refer to the [ArticleAPI typing](https://github.com/digisquad-io/strapi-supercharged-template/tree/main/api/article/index.d.ts)_
 
 ### 💡 Register Plugins typing
 
 > @todo
 
-_For a complete example, please refer to the [SamplePlugin typing](https://github.com/digisquad-io/strapi-supercharged-template/plugins/sample/index.d.ts)_
+_For a complete example, please refer to the [SamplePlugin typing](https://github.com/digisquad-io/strapi-supercharged-template/tree/main/plugins/sample/index.d.ts)_
 
 ### 🌠 Use your Supercharged Strapi
 
@@ -184,25 +184,25 @@ _For a complete example, please refer to the [SamplePlugin typing](https://githu
 
 > @todo
 
-_For a complete example, please refer to the [Article controller](https://github.com/digisquad-io/strapi-supercharged-template/api/article/controllers/article.js)_
+_For a complete example, please refer to the [Article controller](https://github.com/digisquad-io/strapi-supercharged-template/tree/main/api/article/controllers/article.js)_
 
 #### In services
 
 > @todo
 
-_For a complete example, please refer to the [Article service](https://github.com/digisquad-io/strapi-supercharged-template/api/article/services/article.js)_
+_For a complete example, please refer to the [Article service](https://github.com/digisquad-io/strapi-supercharged-template/tree/main/api/article/services/article.js)_
 
 #### In middlewares
 
 > @todo
 
-_For a complete example, please refer to the [Sample middleware (from sample plugin)](https://github.com/digisquad-io/strapi-supercharged-template/plugins/sample/middlewares/sample.js)_
+_For a complete example, please refer to the [Sample middleware (from sample plugin)](https://github.com/digisquad-io/tree/main/strapi-supercharged-template/plugins/sample/middlewares/sample.js)_
 
 #### In scripts
 
 > @todo
 
-_For a complete example, please refer to the [`scripts/initData.js` demo script](https://github.com/digisquad-io/strapi-supercharged-template/scripts/initData.js)_
+_For a complete example, please refer to the [`scripts/initData.js` demo script](https://github.com/digisquad-io/strapi-supercharged-template/tree/main/scripts/initData.js)_
 
 <!-- CONTRIBUTING -->
 
