@@ -67,6 +67,66 @@
   </ol>
 </details>
 
+<!-- GETTING STARTED -->
+
+## Getting Started
+
+To get a local copy up and running follow these simple steps.
+
+### Prerequisites
+
+> @todo
+
+### Installation to an existing project
+
+1. Clone the repo
+   ```sh
+   npm install --save-dev strapi-supercharged # yarn add -D strapi-supercharged
+   ```
+2. Create a `tsconfig.json`
+   ```json
+   {
+     "compilerOptions": {
+       "lib": ["esnext"],
+       "target": "ES1019",
+       "moduleResolution": "node",
+       "esModuleInterop": true,
+       "resolveJsonModule": true,
+       "allowJs": true,
+       "checkJs": true,
+       "strict": true,
+       "strictNullChecks": true,
+       "noImplicitAny": true,
+       "baseUrl": ".",
+       "noEmit": true,
+       "declaration": false,
+       "types": [
+         "strapi-supercharged"
+       ]
+     },
+     "include": [
+       "**/*.js",
+       ".eslintrc.js"
+     ],
+   }
+   ```
+   
+### Installation from template
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/digisquad-io/strapi-supercharged-template.git
+   ```
+   > 🚀 **[Or use this repository as template](https://github.com/digisquad-io/strapi-supercharged-template/generate)**
+2. Install NPM packages
+   ```sh
+   npm install # yarn
+   ```
+3. Run the tests
+   ```sh
+   npm test # yarn test
+   ```
+
 <!-- ABOUT THE PROJECT -->
 
 ## About The Project
@@ -95,39 +155,6 @@ Use all power of Typescript directly into your Javascript
 - **Linters** with all recommendation enabled _(eslint+prettier)_
 - **React** linters for admin customization
 - Follows **standard** [conventional-commits](https://www.conventionalcommits.org) and releases process
-
-<!-- GETTING STARTED -->
-
-## Getting Started
-
-To get a local copy up and running follow these simple steps.
-
-### Prerequisites
-
-> @todo
-
-### Installation from template
-
-1. Clone the repo
-   ```sh
-   git clone https://github.com/digisquad-io/strapi-supercharged-template.git
-   ```
-   > 🚀 **[Or use this repository as template](https://github.com/digisquad-io/strapi-supercharged-template/generate)**
-2. Install NPM packages
-   ```sh
-   npm install # yarn
-   ```
-3. Run the tests
-   ```sh
-   npm test # yarn test
-   ```
-
-### Installation to an existing project
-
-1. Clone the repo
-   ```sh
-   npm install --save-dev strapi-supercharged # yarn add -D strapi-supercharged
-   ```
 
 <!-- USAGE EXAMPLES -->
 
