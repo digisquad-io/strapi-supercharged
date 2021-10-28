@@ -17,7 +17,7 @@
   <h3 align="center">Strapi Supercharged</h3>
 
   <p align="center">
-    Opinionated strapi configuration with enhanced typing, linters & releases process
+    Supercharge your Strapi applications and plugins with typescript compiler
     <br />
     <a href="https://github.com/digisquad-io/strapi-supercharged"><strong>Explore the docs »</strong></a>
     <br />
@@ -73,10 +73,6 @@
 
 To get a local copy up and running follow these simple steps.
 
-### Prerequisites
-
-> @todo
-
 ### Installation to an existing project
 
 1. Install `strapi-supercharged` and `typescript` dev dependencies
@@ -112,7 +108,7 @@ To get a local copy up and running follow these simple steps.
    ```sh
    git clone https://github.com/digisquad-io/strapi-supercharged-template.git
    ```
-   > 🚀 **[Or use this repository as template](https://github.com/digisquad-io/strapi-supercharged-template/generate)**
+   > 🚀 **[Or use `strapi-supercharged-template`](https://github.com/digisquad-io/strapi-supercharged-template/generate)**
 2. Install NPM packages
    ```sh
    npm install # yarn
@@ -130,26 +126,35 @@ To get a local copy up and running follow these simple steps.
 
 Use all power of Typescript directly into your Javascript
 
-[![VSCode auto-completion preview][preview-api-content]](api/article/controllers/article.js "VSCode auto-completion preview")
+[![Predict all types from internal and custom methods][preview-api-content]](https://github.com/digisquad-io/strapi-supercharged-template/tree/main/api/article/controllers/article.js "Predict all types from internal and custom methods")
 
-> **VSCode auto-completion preview**
+> **Predict all types from internal and custom methods**
 
-[![Advanced linter configuration][preview-improved-linters]](scripts/empty-script.js "Advanced linter configuration")
+[![Autocomplete built in and custom methods][built-in-and-custom-methods]](https://github.com/digisquad-io/strapi-supercharged-template/tree/main/api/article/controllers.d.ts "Autocomplete built in and custom methods")
+
+> **Autocomplete built in and custom methods**
+
+[![Autocomplete for your models in query][query-autocompletion]](https://github.com/digisquad-io/strapi-supercharged-template/tree/main/api/article/controllers.d.ts "Autocomplete for your models in query")
+
+> **Autocomplete for your models in query**
+
+[![Embed documentation & improved configuration][built-in-configuration-documentation]](https://github.com/digisquad-io/strapi-supercharged-template/tree/main/config/middlewares.js "Embed documentation & improved configuration")
+
+> **Embed documentation & improved configuration**
+
+[![Advanced linter configuration][preview-improved-linters]](https://github.com/digisquad-io/strapi-supercharged-template/tree/main/scripts/empty-script.js "Advanced linter configuration")
 
 > **Advanced linter configuration**
 
-[![Default services & controllers typing][preview-default-controllers-override]](api/article/controllers.d.ts "Default services & controllers typing")
+[![Advanced error detection][static-error-checking]](https://github.com/digisquad-io/strapi-supercharged-template "Advanced error detection")
 
-> **Default services & controllers typing**
+> **Advanced error detection**
 
 ### 🎯 Goals
 
 - Cover **API**, **Plugins** and all **Internal Strapi** typing
 - **Ahead-Of-Time** compilation errors with **Typescript**
-- Highly **extensible** definitions
-- **Linters** with all recommendation enabled _(eslint+prettier)_
-- **React** linters for admin customization
-- Follows **standard** [conventional-commits](https://www.conventionalcommits.org) and releases process
+- Highly **extensible** definitions with interface merging
 
 <!-- USAGE EXAMPLES -->
 
@@ -248,4 +253,7 @@ digisquad.io - contact@digisquad.io
 [linkedin-url]: https://linkedin.com/company/digisquad-io
 [preview-api-content]: ./.github/images/preview-api-content.png
 [preview-improved-linters]: ./.github/images/preview-improved-linters.png
-[preview-default-controllers-override]: ./.github/images/preview-default-controllers-override.png
+[built-in-and-custom-methods]: ./.github/images/built-in-and-custom-methods.png
+[built-in-configuration-documentation]: ./.github/images/built-in-configuration-documentation.png
+[query-autocompletion]: ./.github/images/query-autocompletion.png
+[static-error-checking]: ./.github/images/static-error-checking.png
